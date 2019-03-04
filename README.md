@@ -1,8 +1,8 @@
 # Dog Ceo
-This repository is for an assessment , i have included both projects(UNit and Ui test) in same solution.
+This repository is for an assessment , i have included both projects(Unit and Ui test) in same solution.
 
 ## Getting Started
-This solution was built using Visual studio 2017 on Windows 10 with chrome 72.0.3626.119 (Official Build) (64-bit)
+This solution was built using Visual studio 2017 on Windows 10 with chrome 72.0.3626.119 (Official Build) (64-bit).
 
 ## Prerequisites
 For the UI test project You will need the following version of chrome 72.0.3626.119 (Official Build) (64-bit).
