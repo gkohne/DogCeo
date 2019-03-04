@@ -25,7 +25,7 @@ namespace Dogceo_Unittest
         }
 
         [TestMethod]
-        public void GetGoldenRetrieverSubBreed()
+        public void GetGoldenRetrieverSubBreedRandomImage()
         {
             Operations.GetGoldenRetriverRandomImage().GetAwaiter().GetResult();
         }
