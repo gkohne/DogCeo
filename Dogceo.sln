@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2003
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dogceo_Unittest", "Dogceo_Unittest\Dogceo_Unittest.csproj", "{B175A3E0-B1EA-4174-A6EF-32F135D6C5A6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dogceo_WebTest", "Dogceo_WebTest\Dogceo_WebTest.csproj", "{A01AF4CC-D0D2-4C82-904D-646443BFA145}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B175A3E0-B1EA-4174-A6EF-32F135D6C5A6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B175A3E0-B1EA-4174-A6EF-32F135D6C5A6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B175A3E0-B1EA-4174-A6EF-32F135D6C5A6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B175A3E0-B1EA-4174-A6EF-32F135D6C5A6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A01AF4CC-D0D2-4C82-904D-646443BFA145}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A01AF4CC-D0D2-4C82-904D-646443BFA145}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A01AF4CC-D0D2-4C82-904D-646443BFA145}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A01AF4CC-D0D2-4C82-904D-646443BFA145}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C338E20F-6141-45B1-B95B-F965E9E9A9B6}
+	EndGlobalSection
+EndGlobal
