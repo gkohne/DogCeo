@@ -1,56 +1,33 @@
-#Dog Ceo
-This repository is for an assessment 
+Dog Ceo
+This repository is for an assessment , i have included both projects(UNit and Ui test) in same solution.
 
-#Getting Started
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Getting Started
+This solution was built using Visual studio 2017 on Windows 10 with chrome 72.0.3626.119 (Official Build) (64-bit)
 
 Prerequisites
-What things you need to install the software and how to install them
-
-Give examples
-Installing
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
-Give the example
-And repeat
-
-until finished
-End with an example of getting some data out of the system or using it for a little demo
+For the UI test project You will need the following version of chrome 72.0.3626.119 (Official Build) (64-bit).
 
 Running the tests
-Explain how to run the automated tests for this system
+1.) Open the solution in Visual Studio.
+2.) Open Test Explorer.
+3.) Expend the tests untill you reach the test you wish to run.
+4.) Dogceo_Unittest is the unit tests for Task 1.
+5.) Dogceo_WebTest is the web test for Task 2.
+4.) Right click on test and select "Run selected test".
 
-Break down into end to end tests
-Explain what these tests test and why
+Tests:
+Unit Tests
+GetAllDogBreeds : Perform an API request to produce a list of all dog breeds.
+GetRetriever : Using code, verify “retriever” breed is within the list.
+GetRetrieverSubBreed : Perform an API request to produce a list of sub-breeds for “retriever”.
+GetGoldenRetrieverSubBreedRandomImage : Perform an API request to produce a random image / link for the sub-breed “golden”
 
-Give an example
-And coding style tests
-Explain what these tests test and why
-
-Give an example
-Deployment
-Add additional notes about how to deploy this on a live system
+Webtest
+Webtest: integration test . Navigate to url , assert the table is present , add users if dont exists already , assert users were added
 
 Built With
-Dropwizard - The web framework used
-Maven - Dependency Management
-ROME - Used to generate RSS Feeds
-Contributing
-Please read CONTRIBUTING.md for details on our code of conduct, and the process for submitting pull requests to us.
-
-Versioning
-We use SemVer for versioning. For the versions available, see the tags on this repository.
+Visual Studio
+Selenium
 
 Authors
-Billie Thompson - Initial work - PurpleBooth
-See also the list of contributors who participated in this project.
-
-License
-This project is licensed under the MIT License - see the LICENSE.md file for details
-
-Acknowledgments
-Hat tip to anyone whose code was used
-Inspiration
-etc
+Glenn Kohne
