@@ -8,6 +8,9 @@ using System.Threading.Tasks;
 
 namespace Dogceo_Unittest
 {
+    /// <summary>
+    /// Shared operations for tests
+    /// </summary>
     public static class Operations
     {
         public static string URL = "https://dog.ceo/api/breeds/list/all";
