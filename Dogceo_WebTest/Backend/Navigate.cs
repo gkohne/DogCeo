@@ -14,7 +14,7 @@ namespace Dogceo_WebTest.Backend
         /// <summary>
         /// Used to Navigate to pages
         /// </summary>
-        /// <param name="page">page to naviaget to</param>
+        /// <param name="page">page to navigate to from Enum</param>
         public static void NavigateTo(Page page)
         {
             switch (page)
