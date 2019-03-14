@@ -5,6 +5,9 @@ using OpenQA.Selenium.Support.UI;
 
 namespace Dogceo_WebTest
 {
+    /// <summary>
+    /// Shared operations for test
+    /// </summary>
     public static class Operations
     {
         /// <summary>

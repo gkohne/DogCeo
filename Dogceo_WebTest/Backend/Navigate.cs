@@ -4,6 +4,9 @@ using System;
 
 namespace Dogceo_WebTest.Backend
 {
+    /// <summary>
+    /// Used to navigate to pages
+    /// </summary>
     public  static class Navigate
     {
         const string HomeUrl = "http://www.way2automation.com/angularjs-protractor/webtables/";

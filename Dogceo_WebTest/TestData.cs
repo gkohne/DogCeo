@@ -3,6 +3,9 @@ using OpenQA.Selenium;
 
 namespace Dogceo_WebTest
 {
+    /// <summary>
+    /// Test Data for easy management
+    /// </summary>
     static class TestData
     {
         // Use this to manage users details

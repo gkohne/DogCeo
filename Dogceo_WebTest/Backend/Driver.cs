@@ -4,6 +4,7 @@ using System.IO;
 
 namespace Dogceo_WebTest.Backend
 {
+    // Sets up the Web Driver
     public  static class Driver
     {
         private static IWebDriver _unique_instance;

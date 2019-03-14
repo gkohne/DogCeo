@@ -3,6 +3,9 @@ using System;
 
 namespace Dogceo_WebTest.Backend
 {
+    /// <summary>
+    /// Used to assert
+    /// </summary>
     public  static class _Assert
     {
         /// <summary>

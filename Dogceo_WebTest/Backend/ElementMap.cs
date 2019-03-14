@@ -2,6 +2,9 @@
 
 namespace Dogceo_WebTest.Backend
 {
+    /// <summary>
+    /// Map the elements on one page for easy management
+    /// </summary>
     public  static class ElementMap
     {
         // This allows for easy update for if the name attribue changes
