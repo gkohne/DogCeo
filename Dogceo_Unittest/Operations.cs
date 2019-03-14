@@ -1,10 +1,10 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Newtonsoft.Json.Linq;
-using System;
+﻿using System;
 using System.IO;
 using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Newtonsoft.Json.Linq;
 
 namespace Dogceo_Unittest
 {
@@ -13,9 +13,9 @@ namespace Dogceo_Unittest
     /// </summary>
     public static class Operations
     {
-        public const string URL = "https://dog.ceo/api/breeds/list/all";
-        public const string RetrieverURL = "https://dog.ceo/api/breed/retriever/list";
-        public const string GoldenRetriver = "https://dog.ceo/api/breed/retriever/golden/images/random";
+        public const string Url = "https://dog.ceo/api/breeds/list/all";
+        public const string RetrieverUrl = "https://dog.ceo/api/breed/retriever/list";
+        public const string GoldenRetriever = "https://dog.ceo/api/breed/retriever/golden/images/random";
 
         /// <summary>
         /// Gets stream of the page from url
@@ -24,7 +24,7 @@ namespace Dogceo_Unittest
         /// <returns>string</returns>
         static async Task<string> GetAll(string url)
         {
-            string output = string.Empty;
+            string output;
 
             HttpClient httpClient = new HttpClient();
             Stream receiveStream = await httpClient.GetStreamAsync(new Uri(url));
@@ -42,7 +42,7 @@ namespace Dogceo_Unittest
         public static async Task GetAllBreeds()
         {
             // Get All dogs
-            dynamic json = JObject.Parse(await GetAll(URL));
+            dynamic json = JObject.Parse(await GetAll(Url));
 
             // Assert output is not null
             Assert.IsNotNull(json);
@@ -58,7 +58,7 @@ namespace Dogceo_Unittest
         public  static async Task GetBreed(string breed)
         {
             // Get All dogs
-            string json = JObject.Parse(await GetAll(URL)).ToString();
+            string json = JObject.Parse(await GetAll(Url)).ToString();
             
             // Assert breed is in output
             Assert.IsTrue(json.Contains(breed));
@@ -70,7 +70,7 @@ namespace Dogceo_Unittest
         public  static async Task GetSubBreed()
         {
             // Get All dogs
-            dynamic json = JObject.Parse(await GetAll(RetrieverURL));
+            dynamic json = JObject.Parse(await GetAll(RetrieverUrl));
 
             // Assert output is not null
             Assert.IsNotNull(json);
@@ -80,12 +80,12 @@ namespace Dogceo_Unittest
         }
 
         /// <summary>
-        /// Get ramdom Image of GoldenRetriver
+        /// Get random Image of GoldenRetriever
         /// </summary>
-        public static async Task GetGoldenRetriverRandomImage()
+        public static async Task GetGoldenRetrieverRandomImage()
         {
             // Get All dogs
-            dynamic json = JObject.Parse(await GetAll(GoldenRetriver));
+            dynamic json = JObject.Parse(await GetAll(GoldenRetriever));
 
             // Assert output is not null
             Assert.IsNotNull(json);

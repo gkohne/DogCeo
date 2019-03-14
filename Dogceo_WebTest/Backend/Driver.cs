@@ -1,13 +1,13 @@
-﻿using OpenQA.Selenium;
+﻿using System.IO;
+using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
-using System.IO;
 
 namespace Dogceo_WebTest.Backend
 {
     // Sets up the Web Driver
     public  static class Driver
     {
-        private static IWebDriver _unique_instance;
+        private static IWebDriver _uniqueInstance;
 
         /// <summary>
         /// Make instance to be reused
@@ -16,13 +16,13 @@ namespace Dogceo_WebTest.Backend
         {
             get
             {
-                if (_unique_instance == null)
+                if (_uniqueInstance == null)
                 {
                     // Use chrome driver located in Webdriver folder
-                    _unique_instance = new ChromeDriver(Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(Directory.GetCurrentDirectory()))) + @"\Dogceo_WebTest\Backend\WebDriver\");
+                    _uniqueInstance = new ChromeDriver(Path.GetDirectoryName(Path.GetDirectoryName(Path.GetDirectoryName(Directory.GetCurrentDirectory()))) + @"\Dogceo_WebTest\Backend\WebDriver\");
                 }
 
-                return _unique_instance;
+                return _uniqueInstance;
             }
         }
 

@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2003
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Unittest", "Dogceo_Unittest\Unittest.csproj", "{B175A3E0-B1EA-4174-A6EF-32F135D6C5A6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dogceo_Unittest", "Dogceo_Unittest\Dogceo_Unittest.csproj", "{B175A3E0-B1EA-4174-A6EF-32F135D6C5A6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebTest", "Dogceo_WebTest\WebTest.csproj", "{A01AF4CC-D0D2-4C82-904D-646443BFA145}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Dogceo_WebTest", "Dogceo_WebTest\Dogceo_WebTest.csproj", "{A01AF4CC-D0D2-4C82-904D-646443BFA145}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{DCF69D5F-FC6D-458E-9D0B-8755982D7A41}"
 	ProjectSection(SolutionItems) = preProject

@@ -1,5 +1,5 @@
-﻿using OpenQA.Selenium;
-using System;
+﻿using System;
+using OpenQA.Selenium;
 
 namespace Dogceo_WebTest.Backend
 {
@@ -9,7 +9,7 @@ namespace Dogceo_WebTest.Backend
     public  static class _Assert
     {
         /// <summary>
-        /// Used to Assert elemnt exists
+        /// Used to Assert element exists
         /// </summary>
         /// <param name="path">Xpath of element</param>
         /// <returns>bool</returns>

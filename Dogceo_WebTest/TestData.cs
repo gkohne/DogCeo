@@ -15,7 +15,7 @@ namespace Dogceo_WebTest
         public static string User1LastName = "LName1";
         public static string User1UserName = "User1";
         public static string User1Password = "Pass1";
-        public static By User1Customer = ElementMap.CustomerCompanyAAA;
+        public static By User1Customer = ElementMap.CustomerCompanyAaa;
         public static string User1Role = "Admin";
         public static string User1Email = "admin@mail.com";
         public static int User1MobileNumber = 082555;
@@ -26,7 +26,7 @@ namespace Dogceo_WebTest
         public static string User2LastName = "LName2";
         public static string User2UserName = "User2";
         public static string User2Password = "Pass2";
-        public static By User2Customer = ElementMap.CustomerCompanyBBB;
+        public static By User2Customer = ElementMap.CustomerCompanyBbb;
         public static string User2Role = "Customer";
         public static string User2Email = "cusomter@mail.com";
         public static int User2MobileNumber = 083444;

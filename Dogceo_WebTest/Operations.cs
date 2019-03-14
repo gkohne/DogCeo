@@ -13,71 +13,71 @@ namespace Dogceo_WebTest
         /// <summary>
         /// Used to Add a User
         /// </summary>
-        /// <param name="FirstName">First Name</param>
-        /// <param name="LastName">Last Name</param>
-        /// <param name="UserName">UserName</param>
-        /// <param name="Password">Password</param>
-        /// <param name="Customer">Customer</param>
-        /// <param name="Role">Role</param>
-        /// <param name="Email">Email</param>
-        /// <param name="MobileNumber">MobileNumber</param>
-        /// <param name="Verify">to assert user exists after save</param>
-        public static void AddUser(string FirstName, string LastName, string UserName, string Password, By Customer, string Role, string Email, int MobileNumber, bool Verify)
+        /// <param name="firstName">First Name</param>
+        /// <param name="lastName">Last Name</param>
+        /// <param name="name">UserName</param>
+        /// <param name="password">Password</param>
+        /// <param name="customer">Customer</param>
+        /// <param name="role">Role</param>
+        /// <param name="email">Email</param>
+        /// <param name="mobileNumber">MobileNumber</param>
+        /// <param name="verify">to assert user exists after save</param>
+        public static void AddUser(string firstName, string lastName, string name, string password, By customer, string role, string email, int mobileNumber, bool verify)
         {
             // Check user does not exist
-            Assert.IsFalse(_Assert.AssertExists(By.XPath("//td[contains(.,'" + UserName + "')]")));
+            Assert.IsFalse(_Assert.AssertExists(By.XPath("//td[contains(.,'" + name + "')]")));
 
             // Click Add User Button
             Driver.Inst.FindElement(ElementMap.AddUserButton).Click();
 
             // Type First name
-            SendText(ElementMap.FirstName, FirstName);
+            SendText(ElementMap.FirstName, firstName);
 
             // Type Last name
-            SendText(ElementMap.LastName, LastName);
+            SendText(ElementMap.LastName, lastName);
 
             // Type User Name
-            SendText(ElementMap.UserName, UserName);
+            SendText(ElementMap.Name, name);
 
             // Type Password
-            SendText(ElementMap.Password, Password);
+            SendText(ElementMap.Password, password);
 
             // Click Customer 
-            Driver.Inst.FindElement(Customer).Click();
+            Driver.Inst.FindElement(customer).Click();
 
             // Select Role "Admin"
-            SelectElement role = new SelectElement(Driver.Inst.FindElement(ElementMap.Role));
-            role.SelectByText(Role);
+            SelectElement therole = new SelectElement(Driver.Inst.FindElement(ElementMap.Role));
+            therole.SelectByText(role);
 
             // Type Email address
-            SendText(ElementMap.Email, Email);
+            SendText(ElementMap.Email, email);
 
             // Type Email address
-            SendText(ElementMap.Mobilephone, MobileNumber.ToString());
+            SendText(ElementMap.Mobilephone, mobileNumber.ToString());
 
             //Save User
             Driver.Inst.FindElement(ElementMap.Save).Click();
 
-            if (Verify)
+            if (verify)
             {
-                VerifyText(FirstName);
-                VerifyText(LastName);
-                VerifyText(UserName);
-                VerifyText(Role);
-                VerifyText(Email);
-                VerifyText(MobileNumber.ToString());
+                VerifyText(firstName);
+                VerifyText(lastName);
+                VerifyText(name);
+                VerifyText(role);
+                VerifyText(email);
+                VerifyText(mobileNumber.ToString());
             }
         }
 
         /// <summary>
         /// Used to clear input before sending text
         /// </summary>
-        /// <param name="Element">to send text to</param>
+        /// <param name="element">to send text to</param>
         /// <param name="text">text to send</param>
-        private static void SendText(By Element, string text)
+        private static void SendText(By element, string text)
         {
-            Driver.Inst.FindElement(Element).Clear();
-            Driver.Inst.FindElement(Element).SendKeys(text);
+            Driver.Inst.FindElement(element).Clear();
+            Driver.Inst.FindElement(element).SendKeys(text);
         }
 
         /// <summary>
