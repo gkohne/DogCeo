@@ -13,16 +13,16 @@ namespace Dogceo_Unittest
     /// </summary>
     public static class Operations
     {
-        public static string URL = "https://dog.ceo/api/breeds/list/all";
-        public static string RetrieverURL = "https://dog.ceo/api/breed/retriever/list";
-        public static string GoldenRetriver = "https://dog.ceo/api/breed/retriever/golden/images/random";
+        public const string URL = "https://dog.ceo/api/breeds/list/all";
+        public const string RetrieverURL = "https://dog.ceo/api/breed/retriever/list";
+        public const string GoldenRetriver = "https://dog.ceo/api/breed/retriever/golden/images/random";
 
         /// <summary>
         /// Gets stream of the page from url
         /// </summary>
         /// <param name="url">url to use</param>
         /// <returns>string</returns>
-        public static async Task<string> GetAll(string url)
+        static async Task<string> GetAll(string url)
         {
             string output = string.Empty;
 
