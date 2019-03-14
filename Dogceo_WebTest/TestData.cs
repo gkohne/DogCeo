@@ -6,7 +6,7 @@ namespace Dogceo_WebTest
     /// <summary>
     /// Test Data for easy management
     /// </summary>
-    static class TestData
+    public static class TestData
     {
         // Use this to manage users details
 
